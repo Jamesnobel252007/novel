@@ -1,0 +1,382 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Jim Nightshade'  ;
+}
+
+.container{
+width: 90%;
+    border: 2px solid whitesmoke;
+    margin-left: 65px;
+    margin-top: 12px;
+    border-radius: 25px;
+}
+
+body {
+    background-color: #03172b;
+    color: #e2e8f0;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #052849;
+    border-bottom: 2px solid #092a4b;
+    border-radius:30px;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin-top: 10px;
+}
+
+#nav-star{
+    color:#c9b037;
+}
+
+.nav-logo {
+    font-family: 'Jim Nightshade', cursive;
+    font-size: 30px;
+    color: #c9b037;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    border: 2px solid rgb(179, 179, 15);
+    border-radius: 10px;
+    box-shadow: 2px 1px 1px 0px whitesmoke;
+}
+
+
+.nav-item {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-size: 28px;
+    position: relative;
+}
+
+.nav-item:hover {
+    color: #c9b037;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 200px;
+    height: 100vh;
+    background: rgba(16, 50, 83, 0.98);
+    border-left: 2px solid #4a5568;
+    padding: 80px 30px;
+    transition: right 0.3s ease;
+    z-index: 999;
+}
+
+.menu.active {
+    z-index: 1000;
+    right: 0px;
+}
+
+.menu-item {
+    display: block;
+    color: #e2e8f0;
+    text-decoration: none;
+    padding: 20px 0;
+    border-bottom: 1px solid #4a5568;
+    font-size: 18px;
+}
+
+.menu-item:hover {
+    color: #c9b037;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 28px;
+    height: 3px;
+    background: #e2e8f0;
+    transition: 0.3s;
+}
+
+.main-content {
+    padding: 60px 40px;
+}
+
+.page {
+
+    margin-bottom: 100px;
+}
+.homepage{
+margin-top: 40px;
+margin-left:240px;
+margin-bottom: 20px;
+}
+h1,
+h2,
+h4 {
+
+    color: #c9b037;
+    margin-bottom: 20px;
+}
+
+h2{
+    display: inline;
+    font-size: 42px;
+    border-bottom: 2px solid  #c9b037 ;
+}
+
+h4{
+margin-top: 27px;
+margin-left: 190px;
+font-size: 32px;
+}
+
+big{
+font-size: 130px;
+margin-left: -30px;
+animation: fade in .6s ease;
+}
+
+.homepage{
+    left:0;
+}
+
+.btn {
+    background-color: transparent;
+    color: #c9b037;
+    border: 2px solid #c9b037;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background-color: #c9b037;
+    color: #0f1419;
+    box-shadow: 5px 3px 2px 0px whitesmoke;
+}
+
+.about-card{
+        border: 2px solid whitesmoke;
+    height:250px;
+    width: 500px;
+    border-radius: 10px;
+    margin-top: 20px;
+    position: relative;
+    left: 500px;
+    margin-top: -350px;
+    animation: fade in 1s  ease;
+}
+.about-card>p{
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.aboutpage > .image{
+    width: 100px;
+    height: 100px;
+}
+
+.greet{
+    font-size: 28px;
+    position: relative;
+    left: 500px;
+    top: -365px;
+}
+ .image{
+    position: relative;
+    left: 60px;
+    top: 10px;
+    width: 250px;
+    height: 400px;
+    border: 2px solid whitesmoke;
+    border-radius: 150px 150px 0px 0px;
+}
+.about-card > button{
+    color: #c9b037;
+    font-size: 18px;
+    background-color: #1c4066;
+    border: 1px solid #c9b037;
+    border-radius: 30px;
+    height: 40px;
+    width: 100px;
+    
+    margin: 20px 5px 5px 5px ;
+    
+}
+
+
+.projects{
+    margin-top: 70px;
+}
+
+.projects {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.project-card {
+    background:#052849;
+    border-radius: 10px;
+    border: 1px solid whitesmoke;
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    font-size: 28px;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.blogpage> p{
+font-size: 40px;
+}
+
+.contactpage{
+    font-size: 25px;
+}
+
+.linked-in,
+.insta,
+.mail{
+    color: #c9b037;
+}
+
+.icons{
+    display: flex;
+    gap: 70px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+
+    .top-nav{
+        height: 20px;
+    }
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+h4
+{
+    
+    font-size: 20px;
+    margin-left: 0px;
+}
+
+h2{
+    left: 0px;
+    font-size: 30px;
+}
+big{
+    font-size: 60px;
+    text-decoration: bolder ;
+
+}
+
+.homepage{
+   margin-left: 50px;
+}
+.btn{
+    margin-top: 10px;
+    margin-left: -14px ;
+    font-size:15px;
+    cursor: pointer;
+}
+
+
+
+.image{
+    margin-left: -20px;
+    margin-top: 20px;
+width: 150px;
+height: 270px;
+}
+
+.about-card{
+    margin-left:0px;
+    position: relative;
+    left: -15px;
+    display: block;
+    width: 250px;
+    height: 300px;
+    margin-top: 60px;
+    
+}
+.about-card > p{
+    font-size: 18px;
+}
+.greet{
+    position:relative;
+    left:-10px;
+    top:50px;
+    font-size: 20px;
+    
+}
+.project-card{
+    width: 190px;
+    height:300px;
+    justify-content: center;
+}
+
+
+.container{
+        margin-left: 11px;
+    display: block;
+    width: 330px;
+    
+   
+}
+
+}
