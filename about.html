@@ -109,14 +109,16 @@ animation: myanimation .8s ease;
       display: flex;
       flex-wrap: wrap;
       margin-top: 70px;
-      color: grey;
+      color: rgb(133, 129, 129);
       opacity: 0;
        transform: translateY(0px);
     transition: opacity 1s ease-out, transform 1s ease-out;
     }
     .info.visible{
+      color: rgb(148, 142, 142);
       opacity: 1;
       transform: translateY(30px);
+      
 
     }
 
@@ -171,6 +173,10 @@ animation: myanimation .8s ease;
 .portrait{
   position: static;
   margin-bottom: 0;
+}
+
+.portrait > p{
+  font-size: 10px;
 }
 .portrait img{
   width: 300px;
@@ -237,7 +243,7 @@ font-size: 27px;
   left: 300px;
   opacity: 0;
   transform: translateY(0);
-  transition: opacity 1s ease-in-out , transform 1s ease-in-out;
+ 
 
 }
 .quote.visible{
@@ -254,7 +260,8 @@ tag{
 .icons{
   
   border: 2px solid #c9b037;
-  width: 95%;
+  border-radius: 20px;
+  width: 77%;
 padding: 100px;
 }
   </style>
@@ -324,7 +331,7 @@ I’m currently learning JavaScript and aiming to master cloud integration. Whet
           </div>
         </div>
 
-        <div class="line" style="font-size: 0px;"><p>✦</p><big>✦✦</big></p><large style="font-size: 0px;"><big>✦✦</big><big> ✦</big></div>
+        <div class="line" style="font-size: 70px;">-----------------✦-----------------</div>
 
         <h1 class="more">MORE ABOUT ME</h1>
 
@@ -399,12 +406,14 @@ I’m currently learning JavaScript and aiming to master cloud integration. Whet
       });
     });
 
+
+    
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
         }
-      });
+      })
     }, { threshold: 0.1 });
 
     document.querySelectorAll('.fade-in, .image, .more, .info, .quote').forEach(el => observer.observe(el));
