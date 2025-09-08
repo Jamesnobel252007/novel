@@ -8,11 +8,14 @@
   <link rel="preconnect" href="https://fonts.google.com/" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://f/onts.googleapis.com/css2?family=Cascadia+Code&family=Jim+Nightshade&family=Matemasie&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cascadia+Code&family=Jim+Nightshade&family=Matemasie&display=swap"
     rel="stylesheet" />
   <title>S JAMES NOBEL - Fantasy Author</title>
-</head>
 
+  <style>
+
+  </style>
+</head>
 
 <body>
 
@@ -21,13 +24,13 @@
     <header class="top-nav">
       <!-- <div class="nav-logo">JAMES NOBEL</div> -->
       <nav class="nav-links">
-        <a href="./book.html" class="nav-item active">Home</a>
+        <a href=".\book.html" class="nav-item active">Home</a>
         <span id="nav-star">✦</span>
         <a href="./about.html" class="nav-item">About</a>
         <span id="nav-star">✦</span>
         <a href="#projects" class="nav-item">Projects</a>
         <span id="nav-star">✦</span>
-        <a href="novel/blog.html" class="nav-item">Blog</a>
+        <a href="#blog" class="nav-item">Blog</a>
         <span id="nav-star">✦</span>
         <a href="./contact.html" class="nav-item">Contact</a>
       </nav>
@@ -41,62 +44,14 @@
       <a href="./book.html" class="menu-item">Home</a>
       <a href="./about.html" class="menu-item">About</a>
       <a href="#projects" class="menu-item">Projects</a>
-      <a href="novel/blog.html" class="menu-item">Blog</a>
+      <a href="#blog" class="menu-item">Blog</a>
       <a href="./contact.html" class="menu-item">Contact</a>
     </div>
 
-    <!-- ✅ Main Content -->
-    <main class="main-content">
-      <section id="home" class="page homepage fade-in">
-        <h1> <big>S JAMES NOBEL </big> <br>
-          <h4>FANTASY AUTHOR</h4>
-        </h1>
-        <button class="btn"
-          onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });">DISCOVER MY
-          BOOKS</button>
-        <div>
-      </section>
+<h1 id="project" class="project-heading">Projects</h1>
 
-      <section id="about" class="page aboutpage fade-in">
-        <h2>About Me</h2>
-        <div><img class="image" src="itachi2.jpeg"></div>
-        <div class="aboutcard-container">
-          <h2 class="greet">Meet the Author</h2>
-          <div class="about-card">
-            <p>Hello, I'm S James Nobel.<br>I'm a creative writer with a passion for storytelling, imagination, and
-              mysteries.
-              My debut novel invites readers into a magical, eerie world where adventure, friendship, and
-              puzzles collide. I write not just to entertain—but to leave you curious, questioning, and dreaming beyond
-              the final page.</p>
-            <button class="about-btn"><b>Get To Know Me</b></button>
-          </div>
-        </div>
-      </section>
 
-      <section id="projects" class="page projectpage fade-in">
-        <h2 class="pro-head">My Projects</h2>
-        <div class="projects">
-          <div class="project-card"><img src="coverpage.jpg" alt="Project 1" />
-            <p>Book One</p>
-            <button></button>
-          </div>
-          <div class="project-card"><img src="coverpage.jpg" alt="Project 2" />
-            <p>Book Two</p>
-          </div>
-          <div class="project-card"><img src="coverpage.jpg" alt="Project 3" />
-            <p>Book Three</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="blog" class="page blogpage fade-in">
-        <h2>Blog</h2>
-        <p>Coming Soon...</p>
-      </section>
-
-      <section id="contact" class="page contactpage fade-in">
-        <h2>Contact</h2>
-        <div class='icons'>
+  <div class='icons'>
 
           <svg class="mail" href="#" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
             class="bi bi-envelope-fill" viewBox="0 0 16 16">
@@ -118,9 +73,11 @@
 
         </div>
       </section>
-    </main>
 
-  </div>
+
+
+   </div>
+
 
   <!-- ✅ JavaScript -->
   <script>
@@ -138,15 +95,17 @@
       });
     });
 
+
+    
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
         }
-      });
+      })
     }, { threshold: 0.1 });
 
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    document.querySelectorAll('.fade-in, .image, .more, .info, .quote').forEach(el => observer.observe(el));
   </script>
 </body>
 

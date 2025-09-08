@@ -253,10 +253,9 @@ font-size: 27px;
   transform: translateY(30px);
 }
 
-tag{
+.quote h4{
   color: #c9b037;
-  position: relative;
-  left: 450px;
+  margin-left: 270px;
 }
 
 .line{
@@ -275,16 +274,12 @@ padding: 100px;
 /*responsive*/
 
 @media screen and (max-width: 600px) {
-.container{
-        margin-left: 17px;
-    display: block;
-    width: 440px;
-    
-}   
+
+
 
 .about-heading{
-        font-size: 100px;
-        margin-top: 270px;
+        font-size: 70px;
+        margin-top: 250px;
     }
 
     .aboutpage{
@@ -293,41 +288,52 @@ padding: 100px;
     }
 
     .image{
-      margin-top: 0px;
-      margin-left: 7px;
-width: 200px;
-height: 320px;
+     margin: 0;
+width: 220px;
+height: 340px;
 
 }
+
+
     .per{
       font-size: 22px;
       color: rgb(207, 197, 58);
       position  : relative;
-      left: -15px;
+      left: -19px;
       margin-top: 10px;
     }
 
+
+    
 .aboutcard-container{
   position: relative;
   top: 300px;
   left: 50px;
 }
+.aboutcard p{
+  
+  font-size: 27px;
+  
+}
+
 
 .line {
   font-size: 20px;
   margin-top: 300px;
 }
 
+
 .more{
   font-size: 22px;
   margin-left: 10px;
-  margin-bottom: 50px ;
+  margin-bottom: 5px ;
   margin-top:0;
 }
 
+
 .info .firsthalf{
- width: 400px;
-  font-size: 22px;
+ width: 420px;
+  font-size: 25px;
   display: flex;
   flex-direction: column; 
   gap: 20px;
@@ -336,9 +342,11 @@ margin-left: 10px;
 margin-bottom: 0;
 }
 
+
+
 .info .sechalf{
-  width: 400px;
-  font-size: 22px;
+  width: 420px;
+  font-size: 25px;
   display: flex;
   flex-direction: column; 
   gap: 20px;
@@ -346,13 +354,14 @@ margin-bottom: 0;
 margin-left: 10px;
 }
 
+
 .portrait img{
   width: 200px;
   height: 320px;
   border-radius: 100%;
   position: relative;
-  left: 50px;
-  top: -200px;
+  left: 80px;
+  top: 20px;
   animation: myanimation 1.3s ease;
   transition: ease-in;
   z-index: 10000;
@@ -363,35 +372,49 @@ margin-left: 10px;
 .out p{
   display: none;
 }
+
+
 .out{
 font-size: 20px;
   background-color: #c9b037;
-  width: 210px;
-  height: 340px;
+  width: 200px;
+  height: 320px;
   position: relative;
- left: 50px;
+ left: 60px;
   border-radius: 100%;
   top: 123px;
   animation: rotate 15s ease-in-out infinite;
+  display: none;
 }
 
 
 .quote{
-  font-size: 22px;
-  left: 5px;
-}
-.quote tag{
-  font-size: 16px;
-  left: 0;
+  font-size: 27px;
+  left: 25px;
+  width: 300px;
+  top: 0px;
 }
 
+/* .quote::after{
+
+content: '-Rebecca Solnit ' ;
+color: #c9b037;
+} */
+
+.quote h4{
+  font-size: 27px;
+  color: none;
+  position: relative;
+  left: 120px;
+
+}
 .icons{
   padding: 13px;
-  width: 270px; 
+  width: 280px; 
   size: 10px;
   margin-left: 9px;
 
-}
+} 
 
 
 
@@ -429,7 +452,7 @@ font-size: 20px;
       <a href="./book.html" class="menu-item">Home</a>
       <a href="./about.html" class="menu-item">About</a>
       <a href="#projects" class="menu-item">Projects</a>
-      <a href="#blog" class="menu-item">Blog</a>
+      <a href="novel/blog.html" class="menu-item">Blog</a>
       <a href="./contact.html" class="menu-item">Contact</a>
     </div>
 
@@ -495,7 +518,7 @@ I’m currently learning JavaScript and aiming to master cloud integration. Whet
 
 <div class="quote">
 "Stories are the way we see the world when the lights go out."<br>
-<tag>— Rebecca Solnit</tag>
+<h4>— Rebecca Solnit</h4>
   </div>
 
 
