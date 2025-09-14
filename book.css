@@ -155,7 +155,8 @@ animation: fade in .6s ease;
     left:0;
 }
 
-.btn {
+
+.btn{
     background-color: transparent;
     color: #c9b037;
     border: 2px solid #c9b037;
@@ -169,6 +170,21 @@ animation: fade in .6s ease;
     border-radius: 20px;
 }
 
+.buy{
+    background-color: transparent;
+    color: #c9b037;
+    border: 2px solid #c9b037;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 23px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 20px;
+}
+
+
+.buy:hover,
 .btn:hover {
     background-color: #c9b037;
     color: #0f1419;
