@@ -125,6 +125,11 @@ margin-top: 40px;
 margin-left:240px;
 margin-bottom: 20px;
 }
+.name-title{
+font-size: 150px;
+margin-left: -70px;
+animation: fade in .6s ease;
+}
 h1,
 h2,
 h4 {
@@ -145,11 +150,7 @@ margin-left: 190px;
 font-size: 32px;
 }
 
-big{
-font-size: 130px;
-margin-left: -30px;
-animation: fade in .6s ease;
-}
+
 
 .homepage{
     left:0;
@@ -175,7 +176,7 @@ animation: fade in .6s ease;
     color: #c9b037;
     border: 2px solid #c9b037;
     padding: 10px 20px;
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 23px;
     text-decoration: none;
     cursor: pointer;
@@ -230,14 +231,18 @@ animation: fade in .6s ease;
 .about-card > button{
     color: #c9b037;
     font-size: 18px;
-    background-color: #1c4066;
+    background-color:rgba(16, 50, 83, 0.98) ;
     border: 1px solid #c9b037;
     border-radius: 30px;
     height: 40px;
     width: 100px;
-    
     margin: 20px 5px 5px 5px ;
     
+}
+
+.about-btn a{
+    text-decoration: none;
+    color:#c9b037
 }
 
 
@@ -327,17 +332,18 @@ h4
 {
     
     font-size: 20px;
-    margin-left: 0px;
+    margin-left: 5px;
 }
 
 h2{
     left: 0px;
     font-size: 30px;
 }
-big{
-    font-size: 60px;
+.name-title{
+    padding-top:40px;
+    font-size: 67px;
     text-decoration: bolder ;
-
+    text-align: center;
 }
 
 .homepage{
@@ -348,6 +354,7 @@ big{
     margin-left: -14px ;
     font-size:15px;
     cursor: pointer;
+    margin-bottom: 130px;
 }
 
 
@@ -355,7 +362,7 @@ big{
 .image{
     margin-left: -20px;
     margin-top: 20px;
-width: 150px;
+width: 170px;
 height: 270px;
 }
 
@@ -381,7 +388,7 @@ height: 270px;
 }
 .project-card{
     width: 190px;
-    height:300px;
+    height:370px;
     justify-content: center;
 }
 
@@ -394,4 +401,8 @@ height: 270px;
    
 }
 
+.buy{
+    font-size: 15px;
+    margin-top: 20px;
+}
 }

@@ -102,16 +102,72 @@
       transform: translateY(0);
       transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     }
+
     .card-1 img {
       width: 210px;
       height: 310px;
       border-radius: 10px;
-      margin-left: 100px;
-      margin-top: 25px;
+      margin: 30px;
+
     }
 
 
-    @
+    @media screen and (max-width: 600px) {
+
+
+      .project-heading {
+        font-size: 60px;
+        padding: 250px 100px;
+      }
+
+      .card-1 {
+        display: block;
+        width: 300px;
+        height: 770px;
+        margin: 0 auto;
+      }
+
+      .card-1 .pro-des {
+        font-size: 20px;
+        width: 250px;
+        margin-left: 20px;
+      }
+
+      .card-1 img {
+        width: 200px;
+        height: 250px;
+        align-content: center;
+        margin-left: 50px;
+      }
+
+      .card-1 .buttons {
+        width: 250px;
+        margin-top: 120px;
+      }
+
+      .buttons a {
+        width: 120px;
+        font-size: 15px;
+        padding: 10px 10px;
+        margin-left: 20px;
+      }
+
+      .buttons .dropdown-chap #chapters {
+        width: 120px;
+        font-size: 15px;
+        margin-left: 10px;
+      }
+
+      .icons {
+        padding: 20px;
+        width: 80%;
+        margin: 20px auto;
+      }
+
+      .container {
+        display: block;
+      }
+    }
   </style>
 </head>
 
@@ -153,6 +209,8 @@
 
       <div class="card-1">
 
+        <img src="./coverpage.jpg">
+
         <div class="pro-pact">
           <h2 class="pro-title">The Dreaming Story(vol 1)</h2>
 
@@ -189,7 +247,7 @@
 
 
 
-        <img src="./itachi2.jpeg">
+
 
 
       </div>
